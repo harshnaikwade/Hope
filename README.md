@@ -10,17 +10,17 @@ Architecture diagram explains how system works in real. There are four main comp
 
 ADVANTAGES :
 
-Creates awareness about THE NEED to donate blood
-The post reaches the potential donors.
-Posts made by authorized hospitals only.
-Only donors within a given range can get SMS alert.
-Auto message generator. 
-Debunks myths about blood donation.
-Security : Privacy of donors.
-Person verification 
-One-to-One Interaction : Donors need to interact with just the officials for a private donation.
-User Profile: donor and hospital profiles will have different UI
-Provides an easy intermediate to donate blood amongst new generation.
+1. Creates awareness about THE NEED to donate blood
+2. The post reaches the potential donors.
+3. Posts made by authorized hospitals only.
+4. Only donors within a given range can get SMS alert.
+5. Auto message generator. 
+6. Debunks myths about blood donation.
+7. Security : Privacy of donors.
+8 .Person verification 
+9. One-to-One Interaction : Donors need to interact with just the officials for a private donation.
+10. User Profile: donor and hospital profiles will have different UI
+11. Provides an easy intermediate to donate blood amongst new generation.
 
 
 DISADVANTAGES :
