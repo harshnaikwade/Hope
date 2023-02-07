@@ -26,3 +26,5 @@ ADVANTAGES :
 DISADVANTAGES :
 
 Can’t send specialized alerts based on blood and donor type needed.
+
+For more detailed report [Here](https://docs.google.com/document/d/1sa4vRQeD8EVrLtPEa4P_qtWZts-ojZWR/edit?usp=sharing&ouid=101798250600665407309&rtpof=true&sd=true)
