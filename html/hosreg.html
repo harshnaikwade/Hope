@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital-register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+    crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="/css/hosreg.css">
+
+</head>
+<body>
+    
+        <div class="">
+         
+          <div id="background">
+            <div class="column">
+              <form id="hosreg" name="hosreg" action="/html/index copy.html" method="get" onsubmit ="return verifyPassword()">
+                  <div class="logocontainer">
+                    <img src="/images/logo.png" alt="logo" class="logo">
+                  </div>
+                  <div class="container">
+                    <label for="hosname"><b>Hospital Name :</b></label>
+                    <input type="text" placeholder="Authorised name of hospital" name="hosname" id="hosname" required>
+                    <br><br>
+                    <label for="email"><b>Authorised Hospital Email Id:</b></label>
+                    <input type="email" name="hosemail" id="hosemail" placeholder="Authorised email of hospital" required> 
+                    <br><br>
+                
+                    <label name="psw" for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required> <br>
+                    
+                    <label name="psw2" for="psw2"><b>Confirm password</b></label>
+                    <input type="password" placeholder="re-enter password" name="psw2" id="psw2" required>
+                
+                    <button type="submit">Sign In</button> <br>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember">Term and conditions
+                    </label>
+                    <br><br>
+                    
+                  </div>
+                
+                  <div class="container">
+
+                    <a href="/html/index.html"><button type="button" class="cancelbtn">Cancel</button></a>
+                  </div>
+                </form>
+            </div>
+        
+          </div>
+        </div>
+
+        <script>
+        function verifyPassword() {  
+            var pw = document.forms["hosreg"]["psw"].value;
+            
+            if(pw.length < 8) {  
+                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+                return false;  
+            }  
+            if(pw.length > 15) {  
+                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+                return false;  
+            } 
+            var pw2 = document.forms["hosreg"]["psw2"].value;
+            if(pw2 != pw){
+                document.getElementById("message").innerHTML = "** PAssword not matched.Re-enter the same password"
+                return false;
+            }                                                                                                                                               
+        }  
+
+        </script>
+    
+</body>
+</html>
